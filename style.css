@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #080d18;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  color: #a3ff12;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px #65b900;
+}
+
+.subtitle {
+  color: #8492a8;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 18px;
+
+  background: #141f31;
+  border: 1px solid #26364c;
+  border-radius: 12px;
+}
+
+.score-board span {
+  font-size: 11px;
+  color: #8492a8;
+  letter-spacing: 2px;
+}
+
+.score-board h2 {
+  color: #a3ff12;
+  margin-top: 5px;
+}
+
+.game-area {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  background: #101827;
+  border: 3px solid #31445d;
+  border-radius: 8px;
+
+  box-shadow: 0 0 25px rgba(163, 255, 18, 0.08);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(5, 12, 25, 0.88);
+  border-radius: 8px;
+}
+
+.overlay h2 {
+  font-size: 30px;
+  color: #a3ff12;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  color: #aab5c7;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+button {
+  padding: 13px 22px;
+  border: none;
+  border-radius: 8px;
+
+  background: #a3ff12;
+  color: #101827;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c2ff66;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(163, 255, 18, 0.3);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.controls button {
+  background: #1b2b41;
+  color: white;
+  border: 1px solid #31445d;
+}
+
+.controls button:hover {
+  background: #2b405d;
+}
+
+.instruction {
+  color: #8492a8;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+  .game-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
